@@ -1,9 +1,11 @@
 # Automatic docker volume backup with git
 
 [![License](https://img.shields.io/dub/l/vibe-d.svg)](LICENSE)
-[![Pulls](https://img.shields.io/docker/pulls/fvanderbiest/volume-git-backup.svg)](https://hub.docker.com/r/fvanderbiest/volume-git-backup/)
+[![Pulls](https://img.shields.io/docker/pulls/pigeosolutions/volume-git-backup.svg)](https://hub.docker.com/r/pigeosolutions/volume-git-backup/)
 
-This repository is the source of the [fvanderbiest/volume-git-backup](https://hub.docker.com/r/fvanderbiest/volume-git-backup/) image on Docker Hub.
+This repository is the source of the [pigeosolutions/volume-git-backup](https://hub.docker.com/r/pigeosolutions/volume-git-backup/) image on Docker Hub.
+This is a clone from the [original code by François Van Der Biest](https://github.com/fvanderbiest/docker-volume-git-backup)
+
 The image provides an easy way to `git commit` a docker volume every time a file is updated.
 Feel free to use it if it suits your needs. Contributions welcomed.
 
