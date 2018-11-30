@@ -13,6 +13,9 @@ VOLUME [ "/var/local/data" ]
 WORKDIR /var/local/data
 
 ENV REMOTE_BRANCH master
+# UID of owner of the folder
+ENV FILES_OWNER_UID 999
+ENV FILES_OWNER_GID 999
 
 ENTRYPOINT [ "/entrypoint.sh" ]
 CMD ["bash", "-l", "/run.sh"]

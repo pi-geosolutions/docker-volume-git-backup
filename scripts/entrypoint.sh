@@ -42,7 +42,7 @@ if [ ! -d .git ]; then
 
     echo "Cloning from $REMOTE_URL"
     git clone -b $REMOTE_BRANCH $REMOTE_URL .
-
+    
   else
     echo "No remote configured, just init"
     git init
@@ -63,6 +63,8 @@ if [ -n "$REMOTE_NAME" ] && [ -n "$REMOTE_URL" ]; then
   git reset --hard $REMOTE_NAME/$REMOTE_BRANCH
   git clean -xdf
 fi
+
+chown -R $FILES_OWNER_UID:$FILES_OWNER_GID .
 
 # execute CMD
 exec "$@"
